@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="css/dynamicblog.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- CSS for Datatable -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <!-- End CSS for Datatable -->
+
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- JS for DataTable Plugin -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <!-- End JS for DataTable Plugin -->
+
+
+  <script>
+    // JS for Datatable
+    $(document).ready(function () {
+      $('#example').DataTable();
+    });
+    // End JS for Datatable
+
+    $(document).ready(function () {
+      $(".hamburger .hamburger__inner").click(function () {
+        $(".wrapper").toggleClass("active")
+      })
+
+      $(".top_navbar .fas").click(function () {
+        $(".profile_dd").toggleClass("active");
+      });
+    })
+  </script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="top_navbar">
+      <div class="hamburger">
+        <div class="hamburger__inner">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="logo">
+          IT SATHI SOLUTIONS
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main_container">
+      <div class="sidebar">
+        <div class="sidebar__inner">
+          <div class="profile">
+            <div class="img">
+              <img src="assets/img/logo.ico" alt="profile_pic">
+            </div>
+            <div class="profile_info">
+              <p>Welcome</p>
+              <p class="profile_name">IT SATHI SOLUTIONS</p>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="text-decoration-none active">
+                <span class="icon"><i class="fab fa-blogger-b"></i></span>
+                <span class="title">Blog</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="text-center">Blog</h1>
+        <table id="example" class="display">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Start date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>2011/04/25</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Garrett Winters</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>2011/07/25</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Ashton Cox</td>
+              <td>Junior Technical Author</td>
+              <td>San Francisco</td>
+              <td>2009/01/12</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Cedric Kelly</td>
+              <td>Senior Javascript Developer</td>
+              <td>Edinburgh</td>
+              <td>2012/03/29</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Airi Satou</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>2008/11/28</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Brielle Williamson</td>
+              <td>Integration Specialist</td>
+              <td>New York</td>
+              <td>2012/12/02</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>2011/04/25</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Haley Kennedy</td>
+              <td>Senior Marketing Designer</td>
+              <td>London</td>
+              <td>2012/12/18</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Tatyana Fitzpatrick</td>
+              <td>Regional Director</td>
+              <td>London</td>
+              <td>2010/03/17</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>2011/04/25</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Michael Silva</td>
+              <td>Marketing Designer</td>
+              <td>London</td>
+              <td>2012/11/27</td>
+              <td>
+                <button type="button" class="btn mr-2 mb-2" name="view" value="View"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-danger mb-2" name="delete" value="Delete"><i
+                    class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+        </table>
+        <div class="text-center">
+          <a href="createBlog.html" class="btn fixed-bottom" title="Add Blog" style="background-color: #80CBC4;"><i
+              class="fas fa-plus fa"></i> Create New Blog</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
